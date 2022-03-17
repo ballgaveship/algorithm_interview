@@ -4,6 +4,11 @@ import com.gaveship.algorithm.ValidPalindrome.isPalindrome
 import java.util.*
 
 /**
+ * 01 유효한 팰린드롬
+ *
+ * 주어진 문자열이 팰린드롬인지 확인하라.
+ * 대소문자를 구분하지 않으며, 영문자와 숫자만을 대상으로 한다.
+ *
  * https://leetcode.com/problems/valid-palindrome
  *
  * 모든 대문자를 소문자로 변환하고 영문자와 숫자가 아닌 문자를 모두 제거한 후 앞뒤로 동일하게 읽는 경우 구는 회문 입니다.
