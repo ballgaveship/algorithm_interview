@@ -1,6 +1,6 @@
-package com.gaveship.algorithm
+package com.gaveship.algorithm.manipulation
 
-import com.gaveship.algorithm.ReverseString.reverseString
+import com.gaveship.algorithm.manipulation.ReverseString.reverseString
 
 /**
  * 02 문자열 뒤집기

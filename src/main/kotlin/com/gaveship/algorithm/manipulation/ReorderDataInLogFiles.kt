@@ -1,6 +1,7 @@
-package com.gaveship.algorithm
+package com.gaveship.algorithm.manipulation
 
-import com.gaveship.algorithm.ReorderDataInLogFiles.reorderLogFiles
+import com.gaveship.algorithm.manipulation.ReorderDataInLogFiles.reorderLogFiles
+import com.gaveship.algorithm.shouldBe
 
 /**
  * 03 로그 파일 재정렬

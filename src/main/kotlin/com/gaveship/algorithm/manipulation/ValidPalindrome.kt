@@ -1,6 +1,7 @@
-package com.gaveship.algorithm
+package com.gaveship.algorithm.manipulation
 
-import com.gaveship.algorithm.ValidPalindrome.isPalindrome
+import com.gaveship.algorithm.manipulation.ValidPalindrome.isPalindrome
+import com.gaveship.algorithm.shouldBe
 import java.util.*
 
 /**
