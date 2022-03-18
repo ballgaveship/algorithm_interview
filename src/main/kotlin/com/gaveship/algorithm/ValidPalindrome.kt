@@ -28,27 +28,25 @@ object ValidPalindrome {
 //    }
 
     /**
-     * by stack
+     * by deque
      */
     fun isPalindrome(s: String): Boolean {
-        val stack = Stack<Char>()
+        val arrayDeque = ArrayDeque<Char>()
         s.forEach {
-            val lowercase = it.toLowerCase()
-            if (isNumeric(lowercase.toInt()) || isAlpha(lowercase.toInt())) {
-                stack.add(lowercase)
+            if (it.isDigit() || it.isLetter()) {
+                arrayDeque.add(it.toLowerCase())
             }
         }
-        while (stack.isNotEmpty()) {
-            if (stack.size > 1 && stack.first() != stack.pop()) {
+        while (arrayDeque.isNotEmpty()) {
+            if (arrayDeque.size <= 1) {
+                break
+            }
+            if (arrayDeque.removeFirst() != arrayDeque.removeLast()) {
                 return false
             }
-            stack.removeAt(0)
         }
         return true
     }
-
-    private fun isNumeric(ascii: Int) = ascii in 48 ..57
-    private fun isAlpha(ascii: Int) = ascii in 97 .. 122
 }
 
 fun main() {
