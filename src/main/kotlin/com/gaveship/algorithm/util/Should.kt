@@ -10,7 +10,7 @@ infix fun <T, U : T> T.shouldBe(expected: U?) {
         }
     } else {
         if (this != expected) {
-            throw IllegalArgumentException()
+            throw IllegalArgumentException("expect $expected but $this")
         }
     }
 }
