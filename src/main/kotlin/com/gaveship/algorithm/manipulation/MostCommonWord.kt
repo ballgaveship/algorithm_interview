@@ -1,6 +1,6 @@
 package com.gaveship.algorithm.manipulation
 
-import com.gaveship.algorithm.shouldBe
+import com.gaveship.algorithm.util.shouldBe
 
 /**
  * 04 가장 흔한 단어

@@ -1,4 +1,4 @@
-package com.gaveship.algorithm
+package com.gaveship.algorithm.util
 
 infix fun <T, U : T> T.shouldBe(expected: U?) {
     if (this is Array<*>) {
